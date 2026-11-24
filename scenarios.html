@@ -1,0 +1,20 @@
+<!doctype html>
+<html lang="zh-CN">
+<head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>六站情景图册 · 成都地铁</title><link rel="icon" href="data:,"><link rel="stylesheet" href="scenario-atlas.css"></head>
+<body>
+<header><a class="atlas-brand" href="index.html"><span>M</span>MetroScope</a><span>成都地铁 / 六站情景比较</span><a href="index.html">返回线网工作台 ↗</a></header>
+<main>
+  <aside><span class="kicker">CHENGDU　 /　 SCENARIO ATLAS</span><h1>换乘受限<br>情景图册</h1>
+  <p class="intro">每幅图限制一个站的站内换乘。看从同一处出发，哪些目的站会更难到达。</p>
+  <form><label for="atlasOrigin">从哪里出发</label><div class="search"><input id="atlasOrigin" list="atlasStations" required autocomplete="off"><button>对照</button></div><datalist id="atlasStations"></datalist></form>
+  <div id="examples" aria-label="示例起点"><button>锦城广场</button><button>武侯大道</button><button>川藏立交</button></div>
+  <section class="readout" aria-live="polite"><small>受影响目的站最多的情景</small><h2 id="summaryStation"></h2><strong id="summaryCount"></strong><p id="summaryText"></p></section>
+
+  </aside>
+  <section class="figures"><div class="board-head"><h2><span id="originCaption"></span>出发</h2><small>点站更换起点　·　六图共用坐标与色阶</small></div><section class="map-key" aria-label="六图共用图例"><div class="scale"><b>额外乘车区段</b><span><i style="--c:#edb460"></i>1–2</span><span><i style="--c:#da7037"></i>3–4</span><span><i style="--c:#a93732"></i>5 及以上</span></div><div class="symbols"><span>◇ 仅多换乘</span><span>○ 起点</span><span>× 受限站</span><span>△ 不可达</span><span>灰点 代价不变</span></div></section><div id="maps"></div></section>
+</main>
+<footer>六个情景使用同一份线网快照。每个可比较的目的站等权，区段数为模型最优路径上的乘车区段。<span>16 条线路　 /　 拓扑示意</span></footer>
+<div id="atlasTip" role="status" hidden></div>
+<script src="vendor/d3.min.js"></script><script src="prototype-data.js"></script><script src="layout-data.js"></script><script src="components/scenario-atlas.js"></script>
+</body></html>

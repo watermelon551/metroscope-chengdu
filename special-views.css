@@ -1,0 +1,30 @@
+#lensNav,.lens-tools,#deltaTools,#deltaSlider,#lensForm{display:flex;align-items:center;flex-wrap:wrap;gap:8px}
+#lensNav{padding:7px 16px;border-bottom:1px solid #e5ecec;background:#f8faf9}
+#lensNav small{color:#66828a;margin-right:3px}
+#lensNav button,.lens-tools button,#lensForm button{font-size:11px;padding:5px 9px}
+#lensNav button.active{background:#244954;color:white;border-color:#244954}
+.lens-tools,#deltaSlider{padding:9px 14px;background:#f3f7f6;justify-content:space-between}
+.lens-tools label,#deltaSlider{font-size:11px;color:#48616b}
+.lens-tools select,.lens-tools input{max-width:110px;font-size:11px;vertical-align:middle}
+#deltaSlider input{flex:1;accent-color:#a25444}
+#lensSvg,#layerSvg{width:100%;display:block;height:auto;background:#142b37}
+#layerHost,#lensHost{background:#142b37}
+.lens-open #mapContainer,.layer-open #mapContainer,.layer-open #replayBar{display:none}
+.lens-open .right-column{grid-column:1/-1;display:grid;grid-template-columns:minmax(0,1.42fr) minmax(0,1fr);align-items:start}
+.lens-open .map-card{min-width:0}
+.lens-open .map-card .card-heading{flex-wrap:wrap}
+#lensForm input{width:0;min-width:30px;flex:1;padding:6px;border:1px solid #d4e3e4;border-radius:5px}
+#lensForm label{font-size:11px}
+#lensList button{display:grid;grid-template-columns:22px 1fr auto;width:100%;text-align:left;border:0;border-bottom:1px solid #eff2f3;border-radius:0;padding:6px 2px;gap:7px}
+#lensList small{color:#879a9c}
+#lensList b{color:#aa654c;font-size:11px}
+#lensValue{font-size:27px}
+#lensName{margin:12px 0 5px}
+#deltaToArcs,#peakArcs{margin-top:12px;background:#234b56;color:white;font-size:11px}
+#peakDetail{margin-left:4px}
+.lens-arcs g,.lens-negative g,.lens-positive g{cursor:pointer}
+.lens-arcs g:hover path:nth-child(2){stroke-width:4}
+@media(max-width:650px){.lens-open .right-column{display:block}#lensNav{gap:5px;padding:6px}.lens-tools{padding:6px}.lens-tools select{max-width:82px}#lensSvg,#layerSvg{min-height:250px}#peakDetail{margin-left:0}}
+
+.peak-arc-toggle{display:inline-flex;align-items:center;gap:3px;font-size:10px;color:#496470}.peak-arc-toggle input{accent-color:#28605b}.peak-tools{flex-wrap:wrap}
+#atlasLink{display:inline-block;padding:4px 9px;border:1px solid #64897b;border-radius:4px;color:#245449;text-decoration:none;font-size:12px;font-weight:600}#atlasLink:hover{background:#e0ede6}

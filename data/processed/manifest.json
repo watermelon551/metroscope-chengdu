@@ -1,0 +1,49 @@
+{
+  "version": "draft-v0.1",
+  "retrievedDate": "2026-11-03",
+  "status": "关键差异已核验；全量逐站复核待完成",
+  "officialMap": "https://www.chengdurail.com/ckfw/xlt.htm",
+  "officialImage": "https://www.chengdurail.com/images/longquanyihuochezhankaitong2222.png",
+  "candidate": "https://github.com/DPCau/Open-Metro-PIS/tree/main/data/chengdu",
+  "candidateLicense": "CC BY-NC-SA 4.0",
+  "gitBlobs": {
+    "route": "b085817ba30d19a0ba862c17fbb68fb118da9e6b",
+    "station": "78b506b986e7dab797dd6f0160c2a988627d451f",
+    "color": "d92943ea26d9b8da6c8de744be82dd0be85f068b"
+  },
+  "sha256": {
+    "candidate-color.json": "c422896809cd111b803f7145694d6fcac95e4a6698a99de3fc6a98e8c7a66ba3",
+    "candidate-LICENSE": "e66c269d4819aaab34b49ef5220c4ddab6756f21bb5180761a4eb8561f2b7bbd",
+    "candidate-route.json": "a1f2ee90bc157098a67e9b5942e748020616d37230ec949be53f15eab080e125",
+    "candidate-station.json": "1eb316f7bfa98d24063ca27891f35da8c47ce822f5037b8de8827b78384c3862",
+    "rmp-chengdu-metadata.json": "81dda26359b2a19547251b9e85dac90a4b5bba8a711080c5d2321ba039a6f64c",
+    "rmp-chengdu.json": "25e2c685669586f0130ae3b616fe22af0685e5c3b273656c07ba4f9a9212bfa7"
+  },
+  "excludedLines": [
+    "S3",
+    "蓉2"
+  ],
+  "inactiveStations": [
+    "分水",
+    "玉虹路",
+    "白仁店"
+  ],
+  "transferOnly": [
+    "天府站"
+  ],
+  "corrections": [
+    "6号线新通大道与新川路站序按官方图纠正"
+  ],
+  "metrics": {
+    "lines": 16,
+    "stations": 359,
+    "endpoints": 358,
+    "lineStates": 447,
+    "rideEdges": 432,
+    "transferHubs": 82,
+    "internalTransfers": 94,
+    "externalTransfers": 3,
+    "orderedPairs": 127806
+  },
+  "stationCoordinates": "hand-placed schematic anchors, no geographic CRS"
+}

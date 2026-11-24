@@ -1,0 +1,47 @@
+.reach-corridors,.reach-annotation,.reach-points,.reach-badges{display:none;pointer-events:none}
+.reach-view .reach-corridors,.reach-view .reach-annotation,.reach-view .reach-points,.reach-view .reach-badges{display:inline}
+.reach-view .route-layer,.reach-view .marker-layer,.reach-open .map-key,.reach-open .map-label{display:none}
+.reach-view .rail-path{stroke-opacity:.42;stroke-width:2.2}
+.reach-view [data-reach=outside] .station-core{stroke:#acb9b9;fill:#fff}
+.reach-view [data-reach=outside] text{fill:#91a1a4}
+.reach-view [data-reach=kept] .station-core{stroke:#177e73;fill:#d0eee7;stroke-width:1.35}
+.reach-view [data-reach=lost] .station-core{stroke:#a43358;fill:#f9d7df;stroke-width:1.8}
+.reach-view [data-reach=origin] .station-core{stroke:#154c59;stroke-width:2}
+.reach-view [data-reach=lost] .ordinary-label,.reach-view [data-reach=origin] .ordinary-label{opacity:1;fill:#6a2940;font-weight:650}
+.reach-open .right-column{grid-column:1/-1;display:grid;grid-template-columns:minmax(0,1.42fr) minmax(0,1fr);align-items:start}
+.reach-open #mapContainer{height:440px;min-height:440px;background:#fafcfb}
+.reach-open .map-card .card-heading{flex-wrap:wrap}
+.reach-open .minimap{height:75px;width:72px}
+.reach-open .minimap svg{height:58px}
+#reachBar,#reachBar>div,.reach-budget,.reach-key,.reach-pair,.reach-axis,.reach-list-title,#reachForm{display:flex;align-items:center;gap:8px}
+#reachBar{padding:8px 16px;justify-content:space-between;border-bottom:1px solid #dde9e6;background:#f5f9f6}
+#reachBar .atlas-index{background:#dcebdc;color:#365d46}
+#reachBar button{font-size:11px}
+#reachControls{padding:12px 17px;border-top:1px solid #dde9e6}
+.reach-budget label{font-size:12px;color:#38534c}
+.reach-budget strong{font:600 21px Consolas,monospace;color:#186955}
+#reachBudget{flex:1;min-width:45px;accent-color:#28725f;cursor:pointer}
+.reach-key{gap:8px 17px;margin-top:8px;flex-wrap:wrap;font-size:11px;color:#617371}
+.reach-key span:nth-child(1){color:#187967}.reach-key span:nth-child(2){color:#a13358}
+.reach-head{background:#264d40;color:#f5f6e9;padding:21px 20px 15px}
+.reach-head>small{font:600 10px Arial,sans-serif;letter-spacing:1.6px;color:#b6d6c1}
+.reach-head h2{font-size:21px;margin:10px 0 13px}
+.reach-pair{gap:18px}
+.reach-pair div{display:grid;gap:2px}.reach-pair small{font-size:11px;color:#c4dacf}
+.reach-pair b{font:500 36px/1 Consolas,monospace}.reach-pair i{font-style:normal;font-size:21px;color:#b4ccba}
+.reach-head p{color:#cbded0;font-size:11px;margin:11px 0 0}
+.reach-body{padding:15px 17px}
+#reachForm label{white-space:nowrap;font-size:11px;color:#58726b}
+#reachForm input{width:0;flex:1;border:1px solid #dae4e0;padding:6px;color:#265e53;border-radius:5px}
+#reachForm button{font-size:11px;background:#305e4d;color:white}
+.reach-body h3{font-size:13px;margin:14px 0 4px}
+.reach-body small,.reach-axis{font-size:10px;color:#688178}
+#reachProfile{display:block;width:100%;height:54px;margin-top:5px}
+.reach-axis,.reach-list-title{justify-content:space-between}
+.reach-list-title{border-top:1px solid #e3ebe5;margin-top:10px;padding-top:10px}
+.reach-list-title h3{margin:0}
+#reachLost{font:600 12px Consolas;color:#993a57;background:#f7e8eb;padding:2px 5px;border-radius:4px}
+#reachList{margin-top:7px;max-height:150px;overflow:auto;scrollbar-width:thin;font-size:12px;color:#6a7d72}
+#reachList button{border:0;border-bottom:1px solid #edf0ed;border-radius:0;width:100%;justify-content:space-between;text-align:left;padding:6px 2px}
+#reachList b{font:12px Consolas,monospace;color:#923e5a}
+@media(max-width:650px){.reach-open .right-column{display:block}.reach-open #mapContainer{min-height:350px;height:350px}.reach-open .minimap{display:none}#reachBar{padding:8px}#reachBar b{font-size:10px}#mapModes{flex-wrap:wrap}}

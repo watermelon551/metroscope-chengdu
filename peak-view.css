@@ -1,0 +1,56 @@
+.peak-open #mapContainer{display:none}
+#peakJourney{padding:16px 18px 10px;background:#142e3a;color:#eff4ef;border-top:1px solid #45606a;min-width:0}
+#peakJourney header,#peakJourney footer{display:flex;align-items:center;justify-content:space-between;gap:8px;flex-wrap:wrap}
+#peakJourney header{position:static;background:none;border:0;padding:0;height:auto}
+#peakJourney small{font-size:10px;letter-spacing:1px;color:#8dd6ca}
+#peakJourney h3{font-size:21px;margin:4px 0 0;color:#f2f5ef}
+#peakJourney label{font-size:12px;color:#bdd2d4}
+#journeyDestination{max-width:185px;border:1px solid #6a8990;color:#f0f5ef;background:#23434e;border-radius:5px;padding:5px}
+#journeyDelta{color:#ffd4ad;font-size:13px;margin:7px 0 14px}
+.journey-scroll{overflow-x:auto;scrollbar-color:#597a83 #193845}
+#journeyChart{width:100%;display:block}
+#peakJourney footer{margin:6px 0 0;padding:7px 0 0;border-top:1px solid #3c5861;color:#bad0d2;font-size:11px;background:none}
+#journeyReplay{background:#264a55;color:white;border-color:#597d85;font-size:11px;padding:5px 10px}
+.peak-open .right-column{grid-column:1/-1;display:grid;grid-template-columns:minmax(0,1.42fr) minmax(0,1fr);align-items:start}
+.peak-open .map-card .card-heading{flex-wrap:wrap}
+.peak-open .map-card{min-width:0}
+#peakBar,#peakBar>div,.peak-tools,#peakForm{display:flex;align-items:center;gap:8px}
+#peakBar{justify-content:space-between;padding:10px 14px;background:#f2f6f5;border-bottom:1px solid #dce4e3;flex-wrap:wrap}
+#peakBar .atlas-index{background:#dce7e9;color:#285263}
+.peak-tools button{font-size:11px;padding:5px 8px}
+#peakStage{position:relative;height:clamp(435px,50vh,580px);min-width:0;min-height:445px;flex:1;background:#172e38}
+#peakCanvas{display:block;position:absolute;inset:0;width:100%;height:100%;touch-action:none;user-select:none;cursor:grab}
+#peakCanvas:active{cursor:grabbing}
+.peak-towers g,.peak-stations circle{cursor:pointer}
+.peak-towers g:hover .cap{stroke:#fff0bd;stroke-width:1}
+.peaks-head{background:#1d3f4a;color:white;padding:20px}
+.peaks-head>small{font:600 10px Arial,sans-serif;letter-spacing:1.7px;color:#a4c9c8}
+#peakMode{color:#f2c588;font-size:11px;margin:14px 0 3px}
+.peaks-head h2{font-size:21px}.peaks-head strong{display:block;font:600 38px/1.12 Consolas,monospace;color:#ffdda0;margin:3px 0}
+.peaks-head p{font-size:12px;line-height:1.6;margin:4px 0 0;color:#d3e5e6}
+#peakBreakdown{font-size:11px;color:#b5cecf}
+.peaks-body{padding:14px 17px}
+#peakForm input{min-width:0;flex:1;width:0;border:1px solid #dce4e5;border-radius:5px;padding:6px;color:#355565}
+#peakForm label{font-size:11px;white-space:nowrap}
+#peakForm button,#peakDetail{background:#254f5a;color:white;border-color:#254f5a;font-size:11px}
+.peaks-body h3{font-size:13px;margin:14px 0 4px}
+.peaks-body p{font-size:10px;color:#72848b;line-height:1.6;margin:3px 0 8px}
+#peakCompare button{display:grid;grid-template-columns:98px 1fr 47px;align-items:center;gap:9px;text-align:left;width:100%;padding:5px 6px;border:0;border-radius:4px;font-size:11px}
+#peakCompare button.current{background:#edf4f2;color:#20584e}
+#peakCompare button>i{height:5px;border-radius:3px;background:#e7efee;overflow:hidden}
+#peakCompare button>i>i{height:100%;display:block;background:#65a49b}
+#peakCompare b{text-align:right;font:12px Consolas,monospace}
+#peakDetail{margin-top:12px;padding:7px 10px}
+@media(max-width:650px){.peak-open .right-column{display:block}#peakBar{gap:4px;padding:7px}.peak-tools{gap:3px!important}.peak-tools button{font-size:10px;padding:4px}#peakStage{min-height:340px;height:340px}.peak-open .map-card .card-heading{gap:5px}}
+
+.peak-gl{position:absolute;inset:0;width:100%;height:100%;pointer-events:none}
+#peakStage.relief-on{background:radial-gradient(ellipse at 54% 43%,#1e3a50 0%,#122635 48%,#091723 90%)}
+.relief-on #peakCanvas>rect,.relief-on .peak-ground,.relief-on .peak-towers{display:none}
+.relief-on .relief-key{display:block!important}
+
+.relief-actions{display:none}
+.relief-on .relief-actions{position:absolute;right:12px;top:12px;display:flex;gap:5px}
+.relief-actions button{border:1px solid #51717c;background:#112833e8;color:#cde3e4;font-size:11px;padding:5px 8px}
+.relief-actions button[aria-pressed=true]{background:#345968;color:white}
+#peakStage:fullscreen{width:100vw;height:100vh;max-height:none}
+@media(max-width:650px){.relief-on .relief-actions{right:6px;top:auto;bottom:45px}}

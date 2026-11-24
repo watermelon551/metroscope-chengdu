@@ -1,0 +1,12 @@
+.stack-focus { margin:14px 0; padding:14px 16px; background:#f0f6f8; color:#1e4054; border:1px solid #cddfe6; border-radius:9px; font-variant-numeric:tabular-nums; }
+.sf-heading,.sf-legend,.sf-item { display:flex; align-items:center; flex-wrap:wrap; gap:6px 12px; }
+.sf-heading { justify-content:space-between; }
+.sf-name { font-size:16px; color:#173c51; }
+.sf-total { font-size:13px; font-weight:650; }
+.sf-caption { font-size:12px; margin:13px 0 6px; }
+.sf-bar { display:flex; height:19px; overflow:hidden; border-radius:4px; background:#e1e9ed; }
+.sf-legend { margin-top:7px; font-size:12px; }
+.sf-item { gap:5px; }
+.sf-swatch { width:9px; height:9px; border-radius:2px; }
+.stack-mode-note { color:#586f84; font-size:11px; margin:3px 0; }
+.tools .stack-picker { font-size:13px; color:#294c63; }
